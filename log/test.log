@@ -1,1 +1,27 @@
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 127.0.0.1 at 2014-07-22 00:24:37 +0200
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R') ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 233.5ms (Views: 96.4ms | ActiveRecord: 45.5ms)
+Started GET "/assets/application.css" for 127.0.0.1 at 2014-07-22 00:24:38 +0200
+Compiled application.css  (0ms)  (pid 7773)
+Served asset /application.css - 200 OK (29ms)
+Started GET "/assets/application.js" for 127.0.0.1 at 2014-07-22 00:24:38 +0200
+Compiled jquery.js  (56ms)  (pid 7773)
+Compiled jquery_ujs.js  (0ms)  (pid 7773)
+Compiled application.js  (76ms)  (pid 7773)
+Served asset /application.js - 200 OK (120ms)
+Started GET "/" for 127.0.0.1 at 2014-07-22 00:24:42 +0200
+Started GET "/movies" for 127.0.0.1 at 2014-07-22 00:24:48 +0200
+Processing by MoviesController#index as HTML
+Redirected to http://localhost:3000/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title
+Completed 302 Found in 1.3ms (ActiveRecord: 0.0ms)
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 127.0.0.1 at 2014-07-22 00:24:48 +0200
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R') ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (17.4ms)
+Completed 200 OK in 21.4ms (Views: 19.9ms | ActiveRecord: 0.3ms)
