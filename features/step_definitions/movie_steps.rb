@@ -14,7 +14,13 @@ end
 #end
 
 Then /^the director of "(.*?)" should be "(.*?)"$/ do |movie, director|
-  pending
+  m = Movie.find_by_title(movie)
+  #m.director.should == director
+  #print page.find('#details').find('Director').text #.count.should == value+1
+  #page.has_selector?('li', :text => 'no more prob')
+  d = page.find("#details li", :text => "Director").text
+  d.should == ("Director: " + director)
+  
 end
 
 
