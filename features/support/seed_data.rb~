@@ -1,0 +1,2 @@
+require Rails.root.join('db','seeds.rb')
+#require File.dirname(__FILE__) + '/seeds'
