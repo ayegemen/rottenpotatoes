@@ -65,7 +65,8 @@ class MoviesController < ApplicationController
   end
 
   def samedirector
-    
+    @movie = Movie.find(params[:id])
+    #@movies = Movie.find_by_director("james")
   end
 
 end
