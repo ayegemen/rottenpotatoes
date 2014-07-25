@@ -65,7 +65,7 @@ class MoviesController < ApplicationController
   end
 
   def samedirector
-  
+    
   end
 
 end

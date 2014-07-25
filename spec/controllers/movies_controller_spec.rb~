@@ -12,22 +12,18 @@ describe MoviesController do
     end
   end
   
-  describe "links on pages" do
-    let(:mov) { Movie.create(title:"Alien", director: "Ridley Scott", release_date: "12-06-1979")}
-    it "looks for links at: movie detail page" do
-      get :show, {:id => "#{mov.id}"}
-      #debugger 
-      expect(response.body).to have_link("Find Movies With Same Director", 
-        href: samedirector_path(mov))
-      
-    end
-  end
-
   describe "GET #samedirector" do
-    subject {get :index}
-    
+    subject {get :samedirector, id: "1"}
+    it {expect(controller.params["id"]).to eq("1")}
     it "renders the samedirector template" do
       expect(subject).to render_template(:samedirector)
     end
+    #it "sends the correct params to controller" do
+    #  #controller.stub(:params).and_return({"id"=>"1", "controller"=>"movies", 
+    #  #  "action"=>"samedirector"})
+    #  debugger
+    #  expect(controller.params["id"]).to eq("1")
+    #end
+    
   end
 end

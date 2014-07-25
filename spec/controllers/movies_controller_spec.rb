@@ -12,13 +12,18 @@ describe MoviesController do
     end
   end
   
-  
-
   describe "GET #samedirector" do
-    subject {get :index}
-    
+    subject {get :samedirector, id: "1"}
     it "renders the samedirector template" do
       expect(subject).to render_template(:samedirector)
     end
+    it "sends the correct params to controller" do
+      #controller.stub(:params).and_return({"id"=>"1", "controller"=>"movies", 
+      #"action"=>"samedirector"})
+      #debugger
+      get :samedirector, id: "1"
+      expect(controller.params["id"]).to eq("1")
+    end
+    
   end
 end
