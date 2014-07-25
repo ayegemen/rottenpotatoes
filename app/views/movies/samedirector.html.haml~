@@ -10,7 +10,7 @@
 
   %tbody
     %tr
-      %td jungle book 
-      %td 3.3
-      %td 12-22-1988
-      %td click here for more info
+      %td title 
+      %td rating
+      %td release_date
+      %td more info
