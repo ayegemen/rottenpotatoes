@@ -43,30 +43,32 @@ describe MoviesController do
       
       expect(assigns(:movie)).to eq(movie)
     end
-  end  
-  
-  context "director info is pressent" do
-    #before :each do
-    #  
-    #end
     
-    it "checks that director field is set" do
-      get :samedirector, id: movie.id
-      expect(assigns(:movie).director).to_not be_blank
+  
+    context "director field is not blank" do
+      #before :each do
+      #  
+      #end
+      
+      it "checks that director field is set" do
+        get :samedirector, id: movie.id
+        expect(assigns(:movie).director).to_not be_blank
+      end
+        
+        
+      it "calls the director_movies method of movie" do
+        #Movie.stub(:find_all_by_director).with(movie.director).and_return(movie_list)
+        #Movie.should_receive(:find_all_by_director).with(movie.director).and_return(movie_list)
+        #get :samedirector, id: movie.id
+       
+        assigns(:movie).stub(:director_movies).and_return(movie_list)
+        assigns(:movie).director_movies.should eq(movie_list)
+        get :samedirector, id: movie.id
+        #expect(assigns(:simmov)).to eq(movie_list)
+        #expect(Movie).to receive(:find_all_by_director).with(movie.director).and_return(movie_list)
+        #  Movie.stub(:find_all_by_director).with(movie.director).and_return(movie_list)
+      end   
     end
-      
-      
-    it "calls the find_by_director method of Movie" do
-      Movie.stub(:find_all_by_director).with(movie.director).and_return(movie_list)
-      Movie.should_receive(:find_all_by_director).with(movie.director).and_return(movie_list)
-      get :samedirector, id: movie.id
-     
-      #debugger
-      
-      #expect(assigns(:simmov)).to eq(movie_list)
-      #expect(Movie).to receive(:find_all_by_director).with(movie.director).and_return(movie_list)
-      #  Movie.stub(:find_all_by_director).with(movie.director).and_return(movie_list)
-    end   
   end
 end
 

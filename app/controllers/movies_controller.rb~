@@ -66,8 +66,9 @@ class MoviesController < ApplicationController
 
   def samedirector
     @movie = Movie.find(params[:id])
+    @dirmov = @movie.director_movies
     #debugger
-    @simmov = Movie.find_all_by_director(@movie.director)
+    #@simmov = Movie.find_all_by_director(@movie.director)
     #@movies = Movie.find_by_director("james")
   end
 
