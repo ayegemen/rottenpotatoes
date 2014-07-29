@@ -9,8 +9,9 @@
       %th More Info
 
   %tbody
-    %tr
-      %td title 
-      %td rating
-      %td release_date
-      %td more info
+    - @dirmov.each do |movie|
+      %tr
+        %td= movie.title 
+        %td= movie.director
+        %td= movie.rating
+        %td= movie.release_date

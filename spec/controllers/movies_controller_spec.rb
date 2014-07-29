@@ -3,7 +3,8 @@ require 'spec_helper'
 describe MoviesController do
   #render_views
   let(:movie) { FactoryGirl.create(:movie) }
-  let(:movie_list){[FactoryGirl.build(:movie), FactoryGirl.build(:movie,title: "yes man")]}
+  let(:movie_list){[movie, FactoryGirl.build(:movie,title: "yes man")]}
+  let(:wrongmovie){ FactoryGirl.create(:movie, director: nil)}
   
   describe "GET :samedirector" do
     #before :each do
@@ -18,11 +19,6 @@ describe MoviesController do
       expect(response.response_code).to eq(200)
     end
     
-    it "renders the samedirector template" do
-      get :samedirector, id: movie.id
-      expect(response).to render_template(:samedirector)
-    end
-    
     it "sends the correct params to controller" do
       #controller.stub(:params).and_return({"id"=>"1", "controller"=>"movies", 
       #"action"=>"samedirector"})
@@ -34,8 +30,6 @@ describe MoviesController do
       #movie = build(:movie, director: "james")
       #movie.stub(:id).and_return(1)
       #Movie.stub(:find).and_return(movie)
-      #controller.stub(:params).and_return({"id"=>"1", "controller"=>"movies", 
-      #  "action"=>"samedirector"})
       #get :samedirector, id: "1"
       #debugger
       Movie.should_receive(:find).with(movie.id.to_s).and_return(movie)
@@ -45,14 +39,14 @@ describe MoviesController do
     end
     
   
-    context "director field is not blank" do
+    context "movie.director field is valid" do
       #before :each do
       #  
       #end
       
       it "checks that director field is set" do
         get :samedirector, id: movie.id
-        expect(assigns(:movie).director).to_not be_blank
+        expect(movie.director).to_not be_blank
       end
         
         
@@ -61,19 +55,38 @@ describe MoviesController do
         #Movie.should_receive(:find_all_by_director).with(movie.director).and_return(movie_list)
         #get :samedirector, id: movie.id
        
-        assigns(:movie).stub(:director_movies).and_return(movie_list)
-        assigns(:movie).director_movies.should eq(movie_list)
+        #movie.stub(:director_movies).and_return(movie_list)
+        #movie.director_movies.should eq(movie_list)
+        Movie.any_instance.should_receive(:director_movies)
         get :samedirector, id: movie.id
         #expect(assigns(:simmov)).to eq(movie_list)
         #expect(Movie).to receive(:find_all_by_director).with(movie.director).and_return(movie_list)
         #  Movie.stub(:find_all_by_director).with(movie.director).and_return(movie_list)
-      end   
+      end
+
+      it "new @dirmov contains the list of filtered movies" do
+        Movie.any_instance.stub(:director_movies).and_return(movie_list)
+        get :samedirector, id: movie.id
+        expect(assigns(:dirmov)).to eq(movie_list)
+      end
+      
+      it "renders the samedirector template" do
+        get :samedirector, id: movie.id
+        expect(response).to render_template(:samedirector)
+      end
+    end
+    context "movie.director is not valid" do
+      
+      it "check movie.director not valid" do
+        get :samedirector, id: wrongmovie.id
+        expect(wrongmovie.director).to be_blank
+      end
+
+      it "redirects to index page" do
+        response.should redirect_to(movies_path)
+        get :samedirector, id: wrongmovie.id
+      end
+      
     end
   end
 end
-
-#it "loads up same directors" do
-      #  get :samedirector, id: "1"
-      #  #debugger
-      #  expect(assigns(:same_dir_list)).to match_array(@fake_list)
-      #end
