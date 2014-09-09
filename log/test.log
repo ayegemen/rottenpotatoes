@@ -17111,3 +17111,42 @@ Processing by MoviesController#index as HTML
   Rendered movies/index.html.haml within layouts/application (4.8ms)
 Completed 200 OK in 9.4ms (Views: 7.2ms | ActiveRecord: 0.3ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/movies" for 127.0.0.1 at 2014-09-09 22:04:06 +0200
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (67.7ms)
+Completed 200 OK in 284.8ms (Views: 142.2ms | ActiveRecord: 3.9ms)
+Started POST "/movies/search_tmdb" for 127.0.0.1 at 2014-09-09 22:04:06 +0200
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "search_terms"=>"Movie That Does Not Exist", "commit"=>"Search TMDb"}
+Redirected to http://www.example.com/movies
+Completed 302 Found in 1.2ms (ActiveRecord: 0.0ms)
+Started GET "/movies" for 127.0.0.1 at 2014-09-09 22:04:06 +0200
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 8.5ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/movies" for 127.0.0.1 at 2014-09-09 22:04:07 +0200
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 12.1ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+Started POST "/movies/search_tmdb" for 127.0.0.1 at 2014-09-09 22:04:07 +0200
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "search_terms"=>"Inception", "commit"=>"Search TMDb"}
+Redirected to http://www.example.com/movies
+Completed 302 Found in 0.7ms (ActiveRecord: 0.0ms)
+Started GET "/movies" for 127.0.0.1 at 2014-09-09 22:04:07 +0200
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 16.6ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
