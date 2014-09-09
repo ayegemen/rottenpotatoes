@@ -81,6 +81,8 @@ GEM
       tilt
     hike (1.2.3)
     i18n (0.6.9)
+    imdb (0.8.2)
+      nokogiri (= 1.6.2.1)
     journey (1.0.4)
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
@@ -181,6 +183,7 @@ DEPENDENCIES
   debugger
   factory_girl_rails
   haml
+  imdb
   jquery-rails
   launchy
   pg
