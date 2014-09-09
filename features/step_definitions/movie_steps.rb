@@ -7,6 +7,21 @@ Given /the following movies exist/ do |movies_table|
   #flunk "Unimplemented"
 end
 
+Given /I have added "(.*)" with rating "(.*)"/ do |title, rating|
+  steps %Q{
+    Given I am on the Create New Movie page
+    When  I fill in "Title" with "#{title}"
+    And I select "#{rating}" from "Rating"
+    And I press "Save Changes"
+  }
+end
+
+Then /I should see "(.*)" before "(.*)"/ do |string1, string2|
+  #regexp = /#{string1}.*#{string2}/m
+  page.body.should =~ /#{string1}.*#{string2}/m
+end
+
+
 #When /^(?:|I )go to (.+) for "(.*)"$/ do |page, movie|
 #  step "I go to #{page}"
 #  m = Movie.find_by_title(movie) 

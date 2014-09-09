@@ -14,18 +14,18 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-09-09T22:04:07+02:00">2014-09-09T22:04:07+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-09-09T23:09:22+02:00">2014-09-09T23:09:22+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">50.82%</span></span>
+    (<span class="covered_percent"><span class="red">65.57%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.34
+         1.6
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>5</b> files in total.
     <b>61</b> relevant lines. 
-    <span class="green"><b>31</b> lines covered</span> and
-    <span class="red"><b>30</b> lines missed </span>
+    <span class="green"><b>40</b> lines covered</span> and
+    <span class="red"><b>21</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#0387fb632cd174200fa86ab2945d30238f434002" class="src_link" title="app/controllers/movies_controller.rb">app/controllers/movies_controller.rb</a></td>
-        <td class="red strong">42.86 %</td>
+        <td class="red strong">61.22 %</td>
         <td>86</td>
         <td>49</td>
-        <td>21</td>
-        <td>28</td>
-        <td>1.4</td>
+        <td>30</td>
+        <td>19</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>6</td>
         <td>5</td>
         <td>1</td>
-        <td>1.3</td>
+        <td>1.5</td>
       </tr>
       
     </tbody>
@@ -109,11 +109,11 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">45.1%</span></span>
+    (<span class="covered_percent"><span class="red">62.75%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.38
+         1.67
        </span>
     </span> hits/line)
   </h2>
@@ -121,8 +121,8 @@
   <div>
     <b>2</b> files in total.
     <b>51</b> relevant lines. 
-    <span class="green"><b>23</b> lines covered</span> and
-    <span class="red"><b>28</b> lines missed </span>
+    <span class="green"><b>32</b> lines covered</span> and
+    <span class="red"><b>19</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -150,12 +150,12 @@
       
       <tr>
         <td class="strong"><a href="#0387fb632cd174200fa86ab2945d30238f434002" class="src_link" title="app/controllers/movies_controller.rb">app/controllers/movies_controller.rb</a></td>
-        <td class="red strong">42.86 %</td>
+        <td class="red strong">61.22 %</td>
         <td>86</td>
         <td>49</td>
-        <td>21</td>
-        <td>28</td>
-        <td>1.4</td>
+        <td>30</td>
+        <td>19</td>
+        <td>1.7</td>
       </tr>
       
     </tbody>
@@ -170,7 +170,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.3
+         1.5
        </span>
     </span> hits/line)
   </h2>
@@ -202,7 +202,7 @@
         <td>6</td>
         <td>5</td>
         <td>1</td>
-        <td>1.3</td>
+        <td>1.5</td>
       </tr>
       
     </tbody>
@@ -390,11 +390,11 @@
         <div class="source_table" id="0387fb632cd174200fa86ab2945d30238f434002">
   <div class="header">
     <h3>app/controllers/movies_controller.rb</h3>
-    <h4><span class="red">42.86 %</span> covered</h4>
+    <h4><span class="red">61.22 %</span> covered</h4>
     <div>
       <b>49</b> relevant lines. 
-      <span class="green"><b>21</b> lines covered</span> and
-      <span class="red"><b>28</b> lines missed.</span>
+      <span class="green"><b>30</b> lines covered</span> and
+      <span class="red"><b>19</b> lines missed.</span>
     </div>
   </div>
   
@@ -455,14 +455,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="10">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="10">
+          <span class="hits">5</span>
           
           <code class="ruby">    sort = params[:sort] || session[:sort]</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="11">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="11">
+          <span class="hits">5</span>
           
           <code class="ruby">    case sort</code>
         </li>
@@ -473,8 +473,8 @@
           <code class="ruby">    when 'title'</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="3" data-linenumber="13">
+          <span class="hits">3</span>
           
           <code class="ruby">      ordering,@title_header = {:order =&gt; :title}, 'hilite'</code>
         </li>
@@ -497,14 +497,14 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="17">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="17">
+          <span class="hits">5</span>
           
           <code class="ruby">    @all_ratings = Movie.all_ratings</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="18">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="18">
+          <span class="hits">5</span>
           
           <code class="ruby">    @selected_ratings = params[:ratings] || session[:ratings] || {}</code>
         </li>
@@ -515,14 +515,14 @@
           <code class="ruby">    </code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="20">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="20">
+          <span class="hits">5</span>
           
           <code class="ruby">    if @selected_ratings == {}</code>
         </li>
       
-        <li class="covered" data-hits="24" data-linenumber="21">
-          <span class="hits">24</span>
+        <li class="covered" data-hits="18" data-linenumber="21">
+          <span class="hits">18</span>
           
           <code class="ruby">      @selected_ratings = Hash[@all_ratings.map {|rating| [rating, rating]}]</code>
         </li>
@@ -539,26 +539,26 @@
           <code class="ruby">    </code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="24">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="24">
+          <span class="hits">5</span>
           
           <code class="ruby">    if params[:sort] != session[:sort]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="25">
-          
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
           
           <code class="ruby">      session[:sort] = sort</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="26">
-          
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash.keep</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="27">
-          
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to :sort =&gt; sort, :ratings =&gt; @selected_ratings and return</code>
         </li>
@@ -581,26 +581,26 @@
           <code class="ruby">    if params[:ratings] != session[:ratings] and @selected_ratings != {}</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">      session[:sort] = sort</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
-          
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
           
           <code class="ruby">      session[:ratings] = @selected_ratings</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="33">
-          
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash.keep</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="34">
-          
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to :sort =&gt; sort, :ratings =&gt; @selected_ratings and return</code>
         </li>
@@ -611,8 +611,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="36">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="36">
+          <span class="hits">3</span>
           
           <code class="ruby">    @movies = Movie.find_all_by_rating(@selected_ratings.keys, ordering)</code>
         </li>
@@ -659,20 +659,20 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="2" data-linenumber="44">
+          <span class="hits">2</span>
           
           <code class="ruby">    @movie = Movie.create!(params[:movie])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="45">
-          
+        <li class="covered" data-hits="2" data-linenumber="45">
+          <span class="hits">2</span>
           
           <code class="ruby">    flash[:notice] = &quot;#{@movie.title} was successfully created.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="46">
-          
+        <li class="covered" data-hits="2" data-linenumber="46">
+          <span class="hits">2</span>
           
           <code class="ruby">    redirect_to movies_path</code>
         </li>
@@ -809,14 +809,14 @@
           <code class="ruby">    # hardwire to simulate failure</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="69">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="69">
+          
           
           <code class="ruby">    flash[:warning] = &quot;'#{params[:search_terms]}' was not found in TMDb.&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="70">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
           
           <code class="ruby">    redirect_to movies_path</code>
         </li>
@@ -1049,8 +1049,8 @@
           <code class="ruby">  def self.all_ratings</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="6">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="6">
+          <span class="hits">5</span>
           
           <code class="ruby">    %w(G PG PG-13 NC-17 R)</code>
         </li>

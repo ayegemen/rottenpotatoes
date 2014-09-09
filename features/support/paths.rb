@@ -14,6 +14,8 @@ module NavigationHelpers
     case page_name
     when /^the RottenPotatoes home page$/
       movies_path()
+    when /^the RottenPotatoes home page sorted by "(.*)"$/
+      movies_path(:sort=>"#{$1}")
     when /^the Create New Movie page$/
       new_movie_path()
     when /^the home\s?page$/
