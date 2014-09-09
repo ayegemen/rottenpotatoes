@@ -83,10 +83,17 @@ describe MoviesController do
       end
 
       it "redirects to index page" do
-        response.should redirect_to(movies_path)
+        
         get :samedirector, id: wrongmovie.id
+        response.should redirect_to(movies_path)
       end
       
     end
+  end
+  
+  describe 'searching TMDb' do
+    it 'should call the model method that performs TMDb search'
+    it 'should select the Search Results template for rendering'
+    it 'should make the TMDb search results available to that template'
   end
 end
