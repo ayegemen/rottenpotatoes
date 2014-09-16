@@ -22,4 +22,11 @@ describe Movie do
       expect(movie.director_movies).to eq([movie, movie2])
     end
   end
+
+  describe "searching imdb by keyword" do
+    it "search imdb by keyword" do
+      Imdb::Search.should_receive(:new).with(hash_including :title => "Inception")
+      Movie.find_in_imdb('Inception')
+    end
+  end
 end

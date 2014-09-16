@@ -1,10 +1,10 @@
 require ('spec_helper')
 
 describe Movie do
-  it 'should include rating and year in full name' do
-    movie = FactoryGirl.build(:movie, :title => 'Milk', :rating => 'R')
-    movie.title_with_rating.should == 'Milk (R)'
-  end
+  #it 'should include rating and year in full name' do
+  #  movie = FactoryGirl.build(:movie, :title => 'Milk', :rating => 'R')
+  #  movie.title_with_rating.should == 'Milk (R)'
+  #end
   
   describe "searching Movie for same Director" do
     let!(:movie){create(:movie, title: "james bond", director: "tom jones")}
