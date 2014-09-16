@@ -104,6 +104,7 @@ describe MoviesController do
       it 'should make the TMDb search results available to that template' do
         Movie.stub(:find_in_imdb).and_return(movie_list)
         post :search_tmdb, {:search_terms => 'hardware'}
+        debugger
         expect(assigns(:movies)).to eq(movie_list)
       end
     end

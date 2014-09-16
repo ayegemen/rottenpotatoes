@@ -25,7 +25,7 @@ describe Movie do
 
   describe "searching imdb by keyword" do
     it "search imdb by keyword" do
-      Imdb::Search.should_receive(:new).with(hash_including :title => "Inception")
+      Imdb::Search.should_receive(:new).with("Inception")
       Movie.find_in_imdb('Inception')
     end
   end

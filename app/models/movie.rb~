@@ -8,7 +8,7 @@ class Movie < ActiveRecord::Base
   
   def director_movies
     #debugger
-    find_all_by_director(self.director)
+    Movie.find_all_by_director(self.director)
     
   end
 end

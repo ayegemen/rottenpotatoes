@@ -14,26 +14,26 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-09-16T23:30:45+02:00">2014-09-16T23:30:45+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-09-16T23:57:30+02:00">2014-09-16T23:57:30+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">43.33%</span></span>
+    (<span class="covered_percent"><span class="red">45.16%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.03
+         1.02
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
-    <b>60</b> relevant lines. 
-    <span class="green"><b>26</b> lines covered</span> and
+    <b>62</b> relevant lines. 
+    <span class="green"><b>28</b> lines covered</span> and
     <span class="red"><b>34</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -92,12 +92,12 @@
       
       <tr>
         <td class="strong"><a href="#61fd7b6aeb4fc67e1b15e4713995e0d8f915d0b3" class="src_link" title="app/models/movie.rb">app/models/movie.rb</a></td>
-        <td class="yellow strong">83.33 %</td>
-        <td>15</td>
-        <td>6</td>
-        <td>5</td>
+        <td class="yellow strong">87.5 %</td>
+        <td>19</td>
+        <td>8</td>
+        <td>7</td>
         <td>1</td>
-        <td>2.2</td>
+        <td>1.9</td>
       </tr>
       
     </tbody>
@@ -166,19 +166,19 @@
           <div class="file_list_container" id="Models">
   <h2>
     <span class="group_name">Models</span>
-    (<span class="covered_percent"><span class="yellow">83.33%</span></span>
+    (<span class="covered_percent"><span class="yellow">87.5%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.2
+         1.9
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
     <b>1</b> files in total.
-    <b>6</b> relevant lines. 
-    <span class="green"><b>5</b> lines covered</span> and
+    <b>8</b> relevant lines. 
+    <span class="green"><b>7</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -197,12 +197,12 @@
       
       <tr>
         <td class="strong"><a href="#61fd7b6aeb4fc67e1b15e4713995e0d8f915d0b3" class="src_link" title="app/models/movie.rb">app/models/movie.rb</a></td>
-        <td class="yellow strong">83.33 %</td>
-        <td>15</td>
-        <td>6</td>
-        <td>5</td>
+        <td class="yellow strong">87.5 %</td>
+        <td>19</td>
+        <td>8</td>
+        <td>7</td>
         <td>1</td>
-        <td>2.2</td>
+        <td>1.9</td>
       </tr>
       
     </tbody>
@@ -1014,10 +1014,10 @@
         <div class="source_table" id="61fd7b6aeb4fc67e1b15e4713995e0d8f915d0b3">
   <div class="header">
     <h3>app/models/movie.rb</h3>
-    <h4><span class="yellow">83.33 %</span> covered</h4>
+    <h4><span class="yellow">87.5 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -1070,46 +1070,70 @@
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">  def director_movies</code>
+          <code class="ruby">  def self.find_in_imdb(string)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    #debugger</code>
+          <code class="ruby">    Imdb::Search.new(string)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="11">
-          <span class="hits">9</span>
-          
-          <code class="ruby">    Movie.find_all_by_director(self.director)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">    </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">  end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def director_movies</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    #debugger</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="15">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    Movie.find_all_by_director(self.director)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"></code>
