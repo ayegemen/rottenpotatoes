@@ -4,6 +4,6 @@ class AddDirectorColumnToMovies < ActiveRecord::Migration
   end
   
   def down
-    removie_column :movies, :director
+    remove_column :movies, :director
   end
 end

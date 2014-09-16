@@ -83,7 +83,6 @@ describe MoviesController do
       end
 
       it "redirects to index page" do
-        
         get :samedirector, id: wrongmovie.id
         response.should redirect_to(movies_path)
       end
@@ -92,9 +91,21 @@ describe MoviesController do
   end
   
   describe 'searching TMDb' do
-    it 'should call the model method that performs TMDb search'
+    it 'should call the model method that performs TMDb search' do
+      Movie.should_receive(:find_in_imdb).with('hardware').and_return(movie_list)
       post :search_tmdb, {:search_terms => 'hardware'}
-    it 'should select the Search Results template for rendering'
-    it 'should make the TMDb search results available to that template'
+    end
+    describe 'after valid search' do
+      it 'should select the Search Results template for rendering' do
+        Movie.stub(:find_in_imdb).and_return(movie_list)
+        post :search_tmdb, {:search_terms => 'hardware'}
+        response.should render_template('search_tmdb')
+      end
+      it 'should make the TMDb search results available to that template' do
+        Movie.stub(:find_in_imdb).and_return(movie_list)
+        post :search_tmdb, {:search_terms => 'hardware'}
+        expect(assigns(:movies)).to eq(movie_list)
+      end
+    end
   end
 end
