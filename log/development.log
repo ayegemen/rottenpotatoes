@@ -8382,3 +8382,89 @@ Served asset /jquery.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 172.16.40.1 at 2014-09-17 02:39:27 +0200
 Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/movies" for 172.16.40.1 at 2014-09-17 03:02:35 +0200
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (61.5ms)
+Completed 200 OK in 269.7ms (Views: 140.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.16.40.1 at 2014-09-17 03:02:36 +0200
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.40.1 at 2014-09-17 03:02:36 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.40.1 at 2014-09-17 03:02:36 +0200
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.40.1 at 2014-09-17 03:02:36 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started POST "/movies/search_tmdb" for 172.16.40.1 at 2014-09-17 03:02:40 +0200
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I3aXRCSggSrYECQgKxRkTbqWj72WH9r4Eol4kNSdUGU=", "search_terms"=>"godzilla", "commit"=>"Search TMDb"}
+Completed 500 Internal Server Error in 1.4ms
+
+NameError (uninitialized constant Movie::Imdb):
+  app/models/movie.rb:11:in `find_in_tmdb'
+  app/controllers/movies_controller.rb:68:in `search_tmdb'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p545/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p545/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p545/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started GET "/movies" for 172.16.40.1 at 2014-09-17 03:03:28 +0200
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (21.7ms)
+Completed 200 OK in 306.5ms (Views: 140.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.40.1 at 2014-09-17 03:03:30 +0200
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.16.40.1 at 2014-09-17 03:03:30 +0200
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.40.1 at 2014-09-17 03:03:30 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.40.1 at 2014-09-17 03:03:30 +0200
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started POST "/movies/search_tmdb" for 172.16.40.1 at 2014-09-17 03:03:35 +0200
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I3aXRCSggSrYECQgKxRkTbqWj72WH9r4Eol4kNSdUGU=", "search_terms"=>"godzilla", "commit"=>"Search TMDb"}
+  Rendered movies/search_tmdb.html.haml within layouts/application (19917.6ms)
+Completed 200 OK in 24859.6ms (Views: 19923.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 172.16.40.1 at 2014-09-17 03:04:00 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 172.16.40.1 at 2014-09-17 03:04:00 +0200
+Served asset /application.js - 304 Not Modified (114ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 172.16.40.1 at 2014-09-17 03:04:00 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 172.16.40.1 at 2014-09-17 03:04:00 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
