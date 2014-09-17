@@ -92,19 +92,19 @@ describe MoviesController do
   
   describe 'searching TMDb' do
     it 'should call the model method that performs TMDb search' do
-      Movie.should_receive(:find_in_imdb).with('hardware').and_return(movie_list)
+      Movie.should_receive(:find_in_tmdb).with('hardware').and_return(movie_list)
       post :search_tmdb, {:search_terms => 'hardware'}
     end
     describe 'after valid search' do
       it 'should select the Search Results template for rendering' do
-        Movie.stub(:find_in_imdb).and_return(movie_list)
+        Movie.stub(:find_in_tmdb).and_return(movie_list)
         post :search_tmdb, {:search_terms => 'hardware'}
         response.should render_template('search_tmdb')
       end
       it 'should make the TMDb search results available to that template' do
-        Movie.stub(:find_in_imdb).and_return(movie_list)
+        Movie.stub(:find_in_tmdb).and_return(movie_list)
         post :search_tmdb, {:search_terms => 'hardware'}
-        debugger
+        #debugger
         expect(assigns(:movies)).to eq(movie_list)
       end
     end

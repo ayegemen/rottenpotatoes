@@ -25,8 +25,13 @@ describe Movie do
 
   describe "searching imdb by keyword" do
     it "search imdb by keyword" do
-      Imdb::Search.should_receive(:new).with("Inception")
-      Movie.find_in_imdb('Inception')
+      #this is for imdb gem
+      #Imdb::Search.should_receive(:new).with("Inception")
+      #Movie.find_in_imdb('Inception')
+      #this for ruby-tmdb3
+      TmdbMovie.should_receive(:find).with(hash_including :title => 'Inception')
+      Movie.find_in_tmdb('Inception')
+      
     end
   end
 end

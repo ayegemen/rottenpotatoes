@@ -33,6 +33,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'imdb'
 
 # Use unicorn as the web server
 # gem 'unicorn'

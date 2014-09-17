@@ -6,12 +6,15 @@ class Movie < ActiveRecord::Base
     %w(G PG PG-13 NC-17 R)
   end
 
-  def self.find_in_imdb(string)
-    Imdb::Search.new(string)
+  def self.find_in_tmdb(string)
+    #for imdb gem
+    #Imdb::Search.new(string).movies[0,10]
+    #for ruby-tmdb3
+    Tmdb.api_key = "2f3341254894ad2cbbc5e4a21d7b51f9"
+    TmdbMovie.find(:title => string, :limit => 10)
   end
   
   def director_movies
-    #debugger
     Movie.find_all_by_director(self.director)
     
   end

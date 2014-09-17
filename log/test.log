@@ -21308,3 +21308,1453 @@ Completed 200 OK in 2.5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
   [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 16 Sep 2014 21:57:29 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Thu, 16 Sep 2004 21:57:29 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Tue, 16 Sep 2014 21:57:29 UTC +00:00]]
   [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
   [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (61.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 6.0ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 2.9ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0.9ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 2.9ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 408.3ms (Views: 405.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 500 Internal Server Error in 3.3ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5.2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+Completed 500 Internal Server Error in 3.8ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+Completed 500 Internal Server Error in 3.8ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 1.4ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 1.1ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 1.1ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:39 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:04:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:04:40 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:40 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:04:40 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:04:40 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:04:40 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:04:40 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (59.4ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+  Rendered movies/samedirector.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 80.8ms (Views: 70.3ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 4.4ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 6.0ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 7.3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 5.8ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 4.9ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.9ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 4.9ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 1.4ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 1.1ms
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 1.3ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:22 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:22 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:22 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:22 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:22 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:08:22 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:08:22 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (58.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered movies/samedirector.html.haml (60.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 10.2ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 5.8ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 4.6ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:48 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 7.1ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.0ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.8ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 5.7ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 4.6ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.8ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 3.4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 2.5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 2.5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:09:49 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:09:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (60.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:20 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+  Rendered movies/samedirector.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 82.0ms (Views: 71.4ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:20 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 6.4ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:20 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 6.1ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:20 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 7.7ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:20 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5.2ms (Views: 2.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.5ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:20 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:20 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5.1ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 7.3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.7ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 4.6ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 0.7ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 0.4ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 0.5ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:11:21 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:11:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (59.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+  Rendered movies/samedirector.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 81.4ms (Views: 70.9ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 5.8ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 4.5ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 7.0ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5.0ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 6.1ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 6.2ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.7ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 4.9ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 494.3ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:47 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 365.2ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:48 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 500 Internal Server Error in 349.4ms
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:48 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:48 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:48 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:48 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:48 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:12:48 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:12:48 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (58.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:18:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:18:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:18:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered movies/show.html.haml (65.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:18:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:18:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:18:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 4156.4ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:18:56 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:18:56 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:18:56 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 4206.8ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:19:00 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:00 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:00 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 4172.3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 80.3ms (Views: 3.3ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 6.5ms (Views: 2.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 4.8ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.9ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 4.9ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 6.1ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 6.2ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.6ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 6.9ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:19:04 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:19:04 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (58.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:22:58 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:58 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:58 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered movies/samedirector.html.haml (60.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 7.4ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 7.7ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (70.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 6.1ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 7.4ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.0ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 6.0ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 6.6ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 5.2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.4ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:22:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:22:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 4257.7ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:23:03 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:23:03 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:23:03 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 4127.1ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:23:07 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:23:07 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:23:07 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 3.2ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:23:07 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:23:07 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:23:07 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (58.5ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered movies/show.html.haml (65.8ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 7.4ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 7.8ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 6.1ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 5.7ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 5.0ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 5.9ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.0ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.5ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 6.2ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 3.4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 2.4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:25 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 2.6ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (59.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+  Rendered movies/samedirector.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 81.8ms (Views: 71.2ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 5.7ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 4.5ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 6.5ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 4.9ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 6.3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 8.0ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.6ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 4.6ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 3.5ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 2.5ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:24:51 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:24:51 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 2.7ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:25:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:25:39 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:25:39 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:25:39 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:25:39 UTC +00:00], ["title", "james bond"], ["updated_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00], ["description", nil], ["director", "tom jones"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:25:39 UTC +00:00], ["title", "gozilla"], ["updated_at", Wed, 17 Sep 2014 00:25:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'tom jones'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (59.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:29:58 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:58 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:58 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered movies/samedirector.html.haml (60.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:29:58 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:58 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:58 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 66.4ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 5.8ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 4.5ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'[0m
+Completed 200 OK in 7.6ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 4.9ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 5.2ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'some director'
+Completed 200 OK in 7.7ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL[0m
+Completed 302 Found in 4.6ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", nil], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#samedirector as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://test.host/movies
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Completed 302 Found in 4.9ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 5.4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 2.5ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00], ["description", nil], ["director", "some director"], ["rating", "PG"], ["release_date", Fri, 17 Sep 2004 00:29:59 UTC +00:00], ["title", "A Fake Title"], ["updated_at", Wed, 17 Sep 2014 00:29:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"search_terms"=>"hardware"}
+Completed 200 OK in 2.5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
