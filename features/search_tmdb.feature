@@ -11,10 +11,10 @@ Background: Start from the Search form on the home page
  
 Scenario: Try to add nonexistent movie (sad path)
  
-  When I fill in "Search Terms" with "Movie That Does Not Exist"
+  When I fill in "Search Terms" with "zxcvbnm"
   And I press "Search TMDb"
   Then I should be on the RottenPotatoes home page
-  And I should see "'Movie That Does Not Exist' was not found in TMDb."
+  And I should see "'zxcvbnm' was not found in TMDb."
  
 Scenario: Try to add existing movie (happy path)
  

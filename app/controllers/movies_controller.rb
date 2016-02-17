@@ -68,8 +68,10 @@ class MoviesController < ApplicationController
     @movies = Movie.find_in_tmdb(params[:search_terms])
     #@movies = @msearch.movies[0,10]
     # hardwire to simulate failure
-    #flash[:warning] = "'#{params[:search_terms]}' was not found in TMDb."
-    #redirect_to movies_path
+    if @movies.blank?
+      flash[:warning] = "'#{params[:search_terms]}' was not found in TMDb."
+      redirect_to movies_path
+    end
   end
 
   def samedirector
