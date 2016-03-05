@@ -12,5 +12,5 @@ $ rails server
 ### run test
 
 ```sh
-rake cucumber
+$ rake cucumber
 ```
