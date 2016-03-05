@@ -1,4 +1,4 @@
-# RottenTomatoes
+# Rottenpotatoes
 
 a rottentomatoes like site made with ruby on rails
 
