@@ -1,16 +1,16 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/egemen/Desktop/calm-basin-4386/app/controllers/application_controller.rb": [
+      "/Users/egemen/Desktop/rottentomatoes/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/egemen/Desktop/calm-basin-4386/app/helpers/application_helper.rb": [
+      "/Users/egemen/Desktop/rottentomatoes/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/egemen/Desktop/calm-basin-4386/app/helpers/movies_helper.rb": [
+      "/Users/egemen/Desktop/rottentomatoes/app/helpers/movies_helper.rb": [
         1,
         null,
         1,
@@ -18,7 +18,7 @@
         null,
         null
       ],
-      "/Users/egemen/Desktop/calm-basin-4386/app/controllers/movies_controller.rb": [
+      "/Users/egemen/Desktop/rottentomatoes/app/controllers/movies_controller.rb": [
         1,
         null,
         1,
@@ -110,7 +110,7 @@
         null,
         null
       ],
-      "/Users/egemen/Desktop/calm-basin-4386/app/models/movie.rb": [
+      "/Users/egemen/Desktop/rottentomatoes/app/models/movie.rb": [
         1,
         null,
         1,
@@ -135,7 +135,7 @@
         null
       ]
     },
-    "timestamp": 1455227693
+    "timestamp": 1457195726
   },
   "RSpec": {
     "coverage": {
